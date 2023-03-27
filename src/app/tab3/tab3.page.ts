@@ -6,7 +6,7 @@ import { StudentModel, STUDENTS } from '../Model/studentModel';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-
+//hallo
 export class Tab3Page {
   students: StudentModel[];
   test: string = "Meine erste lokale Variable!";
