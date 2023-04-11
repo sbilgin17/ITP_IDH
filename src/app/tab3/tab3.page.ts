@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { StudentModel, STUDENTS } from '../Model/studentModel';
+import {StudentDetailPage} from "../student-detail/student-detail.page";
+
 
 @Component({
   selector: 'app-tab3',
@@ -8,6 +10,9 @@ import { StudentModel, STUDENTS } from '../Model/studentModel';
 })
 //hallo
 export class Tab3Page {
+
+
+  Component = StudentDetailPage;
   students: StudentModel[];
   test: string = "Meine erste lokale Variable!";
 

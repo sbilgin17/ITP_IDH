@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+import {StudentModel, STUDENTS} from "../Model/studentModel";
 
 @Component({
   selector: 'app-student-detail',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentDetailPage implements OnInit {
 
-  constructor() { }
+
+  students:StudentModel[];
+
+
+  constructor(private route:ActivatedRoute) {
+    this.students=STUDENTS;
+    let id:any=this.route.snapshot.paramMap.get('id');
+    console.log("Id des Studenten:", id);
+  }
 
   ngOnInit() {
   }
