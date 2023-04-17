@@ -13,14 +13,23 @@
       <ion-title size="large"> SchülerInnen </ion-title>
     </ion-toolbar>
   </ion-header>
-
+<ion-content class="ion-padding">
   <ion-list>
+    <ion-item *ngFor="let student of students; let i = index">
+      <a [routerLink]="[''+student.id]">
+        <img src='{student.imageUrl}'/>
+        {{student.surname}}
+      </a>
+    </ion-item>
+  </ion-list>
+</ion-content>
 
 
 
-
+<!--
     <ion-button fill="clear">
 <ion-item id="tarik">
+
   <ion-avatar slot="start">
     <img alt="Silhouette of a person's head" src="assets/mcqueen.png"/>
   </ion-avatar>
@@ -279,6 +288,9 @@
 
   </ion-list>
 </ion-content>
+
+-->
+
 
 
 
