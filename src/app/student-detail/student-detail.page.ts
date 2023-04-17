@@ -10,13 +10,18 @@ import {StudentModel, STUDENTS} from "../Model/studentModel";
 export class StudentDetailPage implements OnInit {
 
 
-  students:StudentModel[];
+  students:StudentModel[] = [];
 
 
   constructor(private route:ActivatedRoute) {
-    this.students=STUDENTS;
+    /*this.students=STUDENTS;
     let id:any=this.route.snapshot.paramMap.get('id');
-    console.log("Id des Studenten:", id);
+    console.log("Id des Studenten:", id);*/
+  }
+
+  ionViewDidEnter() {
+    const param = this.route.snapshot.queryParamMap.get("id")
+    console.log(param)
   }
 
   ngOnInit() {

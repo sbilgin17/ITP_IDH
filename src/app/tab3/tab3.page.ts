@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { StudentModel, STUDENTS } from '../Model/studentModel';
 import {StudentDetailPage} from "../student-detail/student-detail.page";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -17,8 +18,12 @@ export class Tab3Page {
   test: string = "Meine erste lokale Variable!";
 
 
-  constructor() {
+  constructor(private router: Router) {
     this.students = STUDENTS;
+  }
+
+  gotoUser(id: number){
+    this.router.navigate(["/student-detail"], { queryParams: { id }});
   }
 
 }

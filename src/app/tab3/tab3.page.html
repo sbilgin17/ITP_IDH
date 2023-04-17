@@ -13,14 +13,47 @@
       <ion-title size="large"> SchülerInnen </ion-title>
     </ion-toolbar>
   </ion-header>
-
+<ion-content class="ion-padding">
   <ion-list>
+    <ion-item *ngFor="let student of students; let i = index">
+
+        <!--
+                <ion-avatar slot="start">
+                  <img alt="Silhouette of a person's head" src="{{student.imageUrl}}"/>
+                </ion-avatar>
+                <ion-label>
+                  {{student.surname}}
+                </ion-label>
+        -->
+                <ion-button fill="clear" (click)="gotoUser(student.id)">
+
+                  <ion-item id="tarik">
+
+                    <ion-avatar slot="start">
+                      <img alt="Silhouette of a person's head" src="assets/mcqueen.png"/>
+                    </ion-avatar>
+                    <ion-label>
+                      {{student.surname}} {{student.vname}}
+                    </ion-label>
+                  </ion-item>
+
+                </ion-button>
+                <!--
+                <img src='{{student.imageUrl}}'/>
+                {{student.surname}}
+                {{student.vname}}
+                -->
+
+    </ion-item>
+  </ion-list>
+</ion-content>
 
 
 
-
+<!--
     <ion-button fill="clear">
 <ion-item id="tarik">
+
   <ion-avatar slot="start">
     <img alt="Silhouette of a person's head" src="assets/mcqueen.png"/>
   </ion-avatar>
@@ -279,6 +312,9 @@
 
   </ion-list>
 </ion-content>
+
+-->
+
 
 
 
