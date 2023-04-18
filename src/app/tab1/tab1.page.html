@@ -1,17 +1,34 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tarik Akpinar 4AHITNX4AHITM
-    </ion-title>
-  </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Stundenplan 4AHITN</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-button>Stundenplan</ion-button>
+  <ion-button>Klassenliste</ion-button>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Startseite</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <p><b>Herzlich Willkommen in der offiziellen App der 4AHITN!</b></p>
+    Diese Applikation beinhaltet die neuesten Informationen bezüglich Klassenfahrten, Durchsagen etc.
+    <p>Unter anderem ist der Stundenplan sowie die Klassenliste genauso verfügbar.</p>
+  </ion-content>
+</div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+<div class="ion-activatable ripple-parent rounded-rectangle">
+  Bounded
+  <ion-ripple-effect></ion-ripple-effect>
+</div>
