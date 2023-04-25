@@ -9,11 +9,8 @@ const routes: Routes = [
   {
     path: 'student-detail',
     loadChildren: () => import('./student-detail/student-detail.module').then( m => m.StudentDetailPageModule)
-  },
-  {
-    path: 'stundenplan',
-    loadChildren: () => import('./stundenplan/stundenplan.module').then( m => m.StundenplanPageModule)
   }
+
 ];
 @NgModule({
   imports: [

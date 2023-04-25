@@ -4,9 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item *ngFor="let student of students; let i = index">
+<ion-content [fullscreen]="true" >
+
   {{student.vname}}
-  </ion-item>
 
 </ion-content>

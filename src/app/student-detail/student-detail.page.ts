@@ -11,20 +11,24 @@ export class StudentDetailPage implements OnInit {
 
 
   students:StudentModel[];
+  student: StudentModel;
 
 
   constructor(private route:ActivatedRoute) {
     this.students=STUDENTS;
-    let id:any=this.route.snapshot.paramMap.get("id");
+    let id:any = this.route.snapshot.queryParamMap.get('id');
+    console.log("ID des Studenten: ", id);
+    this.student=this.students[id-1];
 
   }
 
   ionViewDidEnter() {
-    const param = this.route.snapshot.queryParamMap.get("id");
-    console.log("ID des Studenten: ",param) ;
+    //const param = this.route.snapshot.queryParamMap.get("id");
+    //console.log("ID des Studenten: ",param) ;
   }
 
   ngOnInit() {
+
   }
 
 }

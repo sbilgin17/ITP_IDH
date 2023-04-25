@@ -12,7 +12,7 @@ export class StudentModel{
         this.imageUrl=imageUrl;
         this.id = id;
         this.vname = vname;
-
+//hallo
     }
 }
 export const STUDENTS: StudentModel[]=[
