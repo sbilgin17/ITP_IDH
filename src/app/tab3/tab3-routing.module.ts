@@ -8,11 +8,7 @@ const routes: Routes = [
     path: '',
     component: Tab3Page,
   },
-  {
-    path: ':id',
-    loadChildren:()=>
-      import('../student-detail/student-detail.module').then((m)=>m.StudentDetailPageModule),
-  }
+
 ];
 
 @NgModule({

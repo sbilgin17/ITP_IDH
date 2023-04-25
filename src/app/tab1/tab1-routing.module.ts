@@ -6,7 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
+  },
+
+  {
+    path: ':id',
+    loadChildren:()=>
+      import('../student-detail/student-detail.module').then((m)=>m.StudentDetailPageModule),
   }
+
 ];
 
 @NgModule({

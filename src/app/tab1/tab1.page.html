@@ -9,7 +9,17 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">This is the menu content.</ion-content>
-  <ion-button>Stundenplan</ion-button>
+
+  <ion-button fill="clear" (click)="gotoUser()"> Stundenplan
+    <ion-item>
+      <ion-label>
+        Stundenplan
+      </ion-label>
+    </ion-item>
+
+
+  </ion-button>
+
   <ion-button>Klassenliste</ion-button>
 </ion-menu>
 <div class="ion-page" id="main-content">
@@ -28,7 +38,4 @@
   </ion-content>
 </div>
 
-<div class="ion-activatable ripple-parent rounded-rectangle">
-  Bounded
-  <ion-ripple-effect></ion-ripple-effect>
-</div>
+
