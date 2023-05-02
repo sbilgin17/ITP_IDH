@@ -6,6 +6,30 @@
 
 <ion-content [fullscreen]="true" >
 
-  {{student.vname}}
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="{{student.imageUrl}}" />
+    <ion-card-header>
+      <ion-card-title>{{student.vname}} {{student.surname}}</ion-card-title>
+      <ion-card-subtitle>{{student.merk}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <p>Geburtsdatum: </p>
+      <p>Sternzeichen: </p>
+      <p>Lieblingsfilm: </p>
+      <p>Lieblingsserie: </p>
+      <p>Lieblingsfach: </p>
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+
 
 </ion-content>
