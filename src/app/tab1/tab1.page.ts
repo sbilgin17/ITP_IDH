@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import {StundenplanPage} from "../stundenplan/stundenplan.page";
+import {Router} from "@angular/router";
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  gotoUser(){
+    this.router.navigate(["/stundenplan"], { queryParams: {}});
+  }
 
+  constructor(private  router: Router) {}
 }
