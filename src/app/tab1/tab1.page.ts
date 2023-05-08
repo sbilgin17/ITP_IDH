@@ -13,6 +13,12 @@ export class Tab1Page {
   gotoUser(){
     this.router.navigate(["/tab2"], { queryParams: {}});
   }
+  gotoUser1(){
+    this.router.navigate(["/tabs/tab3"], { queryParams: {}});
+  }
+  gotoUser2(){
+    this.router.navigate(["/tabs/tab2"], { queryParams: {}});
+  }
 
   constructor(private  router: Router) {}
 }

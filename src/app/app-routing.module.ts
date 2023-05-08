@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'stundenplan',
     loadChildren: () => import('./stundenplan/stundenplan.module').then( m => m.StundenplanPageModule)
+  },
+  {
+    path: 'stundenplan',
+    loadChildren: () => import('./stundenplan/stundenplan.module').then( m => m.StundenplanPageModule)
+  },
+  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   }
 ];
 @NgModule({
