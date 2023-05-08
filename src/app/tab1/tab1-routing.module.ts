@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: ':id',
     loadChildren:()=>
-      import('../student-detail/student-detail.module').then((m)=>m.StudentDetailPageModule),
+      import('../tab2/tab2-routing.module').then((m)=>m.Tab2PageRoutingModule),
   }
 
 ];
