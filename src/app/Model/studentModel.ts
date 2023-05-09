@@ -42,6 +42,7 @@ export const STUDENTS: StudentModel[]=[
     new StudentModel("Trojan","assets/mcqueen.png", 21, "Victor", "\"Ich mach' mein Geld auf illegale Art und Weise.\" (Azet)"),
     new StudentModel("Vollmann","assets/mcqueen.png", 22, "Phillip", "\"Ich mach' alles für meine Familie, denn sie sind das Wichtigste für mich.\" (Azet)"),
     new StudentModel("Yusupova","assets/mcqueen.png", 23, "Linda", "\"Ich trage Gucci und Prada, weil ich es mir leisten kann.\" (Ufo361)"),
+    new StudentModel("Yusupova","assets/mcqueen.png", 23, "Linda", "\"Ich trage Gucci und Prada, weil ich es mir leisten kann.\" (Ufo361)"),
 
 
 

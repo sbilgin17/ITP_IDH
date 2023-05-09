@@ -1,31 +1,34 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="bg">
   <ion-toolbar>
     <ion-title>
-      Schülerinnen
+        SchülerInnen
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content [fullscreen]="true" >
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large"> SchülerInnen </ion-title>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" class="bg">
+    <ion-toolbar >
+
+      <ion-title size="large" class="txt"> SchülerInnen </ion-title>
     </ion-toolbar>
   </ion-header>
-<ion-content class="ion-padding">
+<ion-content class="content3">
   <ion-list>
     <ion-item *ngFor="let student of students; let i = index">
 
 
-                <ion-button fill="clear" (click)="gotoUser(student.id)">
+                <ion-button fill="clear" (click)="gotoUser(student.id)" class="schueler">
 
                   <ion-item>
                     <ion-avatar slot="start">
-                      <img alt="Silhouette of a person's head" src="{{student.imageUrl}}"/>
+                      <img  src="{{student.imageUrl}}"/>
                     </ion-avatar>
                     <ion-label>
+                      <p>            mmm</p>
                       {{student.surname}} {{student.vname}}
+                      <p>            mmm</p>
                     </ion-label>
                   </ion-item>
 

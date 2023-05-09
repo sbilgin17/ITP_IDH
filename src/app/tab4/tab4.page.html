@@ -1,12 +1,44 @@
-<ion-header>
+<ion-header [translucent]="true" class="bg">
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-title>
+      Über Uns
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
-  Über uns...
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" class="bg">
+    <ion-toolbar >
+
+      <ion-title size="large" class="txt"> Über Uns </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 
-</ion-content>
+
+  <ion-content class="H4">
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col></ion-col>
+        <ion-col>
+
+          <p><ion-button shape="round" class="button" color="dark">App-Entwickler</ion-button></p>
+          <p><ion-button shape="round" class="button" color="dark">Website-Entwickler</ion-button></p>
+          <p><ion-button shape="round" class="button" color="dark">Designerin</ion-button></p>
+
+
+        </ion-col>
+        <ion-col></ion-col>
+
+
+      </ion-row>
+    </ion-grid>
+
+
+
+  </ion-content>
+
+

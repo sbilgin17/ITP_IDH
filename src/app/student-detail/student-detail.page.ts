@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {StudentModel, STUDENTS} from "../Model/studentModel";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-student-detail',
@@ -26,6 +27,9 @@ export class StudentDetailPage implements OnInit {
     //const param = this.route.snapshot.queryParamMap.get("id");
     //console.log("ID des Studenten: ",param) ;
   }
+
+
+
 
   ngOnInit() {
 
