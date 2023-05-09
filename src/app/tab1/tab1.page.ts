@@ -11,7 +11,10 @@ import {Router} from "@angular/router";
 export class Tab1Page {
 
   gotoUser(){
-    this.router.navigate(["/tab2"], { queryParams: {}});
+    this.router.navigate(["/stundenplan"], { queryParams: {}});
+  }
+  gotoUserr(){
+    this.router.navigate(["/tabs/tab3"], { queryParams: {}});
   }
 
 

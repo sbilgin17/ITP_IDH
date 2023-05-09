@@ -2,24 +2,7 @@
 
 </ion-header>
 
-<ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Stundenplan 4AHITN</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
 
-  <ion-button href="https://www.htl-donaustadt.at/home" target="_blank">htl-donaustadt.at</ion-button>
-
-  <ion-button (click)="gotoUser()"> Stundenplann
-
-
-
-  </ion-button>
-
-  <ion-button>Klassenliste</ion-button>
-</ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
     <ion-toolbar>
@@ -33,6 +16,19 @@
     <p><b>Herzlich Willkommen in der offiziellen App der 4AHITN!</b></p>
     Diese Applikation beinhaltet die neuesten Informationen bezüglich Klassenfahrten, Durchsagen etc.
     <p>Unter anderem ist der Stundenplan sowie die Klassenliste genauso verfügbar.</p>
+
+    <ion-button href="https://www.htl-donaustadt.at/home" target="_blank">htl-donaustadt.at</ion-button>
+
+    <ion-button (click)="gotoUser()"> Stundenplann
+
+
+
+    </ion-button>
+
+    <ion-button (click)="gotoUserr()"> Klassenliste
+
+
+    </ion-button>
   </ion-content>
 
 
