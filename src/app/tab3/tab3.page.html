@@ -1,15 +1,7 @@
-<ion-header [translucent]="true" class="bg">
-  <ion-toolbar>
-    <ion-title>
-        SchülerInnen
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense" class="bg">
-    <ion-toolbar >
+    <ion-toolbar>
 
       <ion-title size="large" class="txt"> SchülerInnen </ion-title>
     </ion-toolbar>
@@ -37,6 +29,9 @@
 
     </ion-item>
   </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
 
 

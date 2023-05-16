@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'appentwickler',
+    loadChildren: () => import('./appentwickler/appentwickler.module').then( m => m.AppentwicklerPageModule)
+  },
+  {
+    path: 'designerin',
+    loadChildren: () => import('./designerin/designerin.module').then( m => m.DesignerinPageModule)
+  },
+  {
+    path: 'websiteentwickler',
+    loadChildren: () => import('./websiteentwickler/websiteentwickler.module').then( m => m.WebsiteentwicklerPageModule)
   }
 ];
 @NgModule({

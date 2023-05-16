@@ -1,24 +1,33 @@
-<ion-header [translucent]="true">
-
-</ion-header>
-
-<div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Video</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
 
 
-    <video width="300" height="200" src="/assets/Recep_Tayyip_Erdogan_AK_Parti_Secim_Muzigi_2014_Ugur_isilak_Dombra_720p.mp4" controls>
-      Ihr Browser kann dieses Video nicht wiedergeben.<br/>
-      Dieser Film zeigt eine Demonstration des video-Elements.
-      Sie können ihn unter <a href="#">Link-Addresse</a> abrufen.
-    </video>
+
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense" class="bg">
+      <ion-toolbar>
+
+        <ion-title size="large" class="txt"> Video </ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <ion-content class="bgm">
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+
+          <video width="300" height="200" src="/assets/Recep_Tayyip_Erdogan_AK_Parti_Secim_Muzigi_2014_Ugur_isilak_Dombra_720p.mp4" controls>
+            Ihr Browser kann dieses Video nicht wiedergeben.<br/>
+            Dieser Film zeigt eine Demonstration des video-Elements.
+            Sie können ihn unter <a href="#">Link-Addresse</a> abrufen.
+          </video>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+
 
   </ion-content>
-</div>
+

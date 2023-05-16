@@ -23,7 +23,7 @@ export class Tab1Page {
   }
 
   gotoUser(){
-    this.router.navigate(["/stundenplan"], { queryParams: {}});
+    this.router.navigate(["/tabs/tab4"], { queryParams: {}});
   }
   gotoUserr(){
     this.router.navigate(["/tabs/tab3"], { queryParams: {}});

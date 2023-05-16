@@ -1,4 +1,17 @@
+.bg{
+  padding-top:65px;
+  background-color: #bebdbd;
+  --ion-background-color: #bebdbd;
+}
+.bgm{
+  background-color: #bebdbd;
+  --ion-background-color: #bebdbd;
+}
+.button{
+  height: 125px;
+  width: 125px;
 
+}
 
 .ripple-parent {
   display: flex;
@@ -20,5 +33,6 @@
   height: 75px;
   border-radius: 8px;
 }
-
-
+ion-icon {
+  font-size: 60px;
+}

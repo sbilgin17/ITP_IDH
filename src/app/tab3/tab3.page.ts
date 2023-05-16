@@ -26,5 +26,4 @@ export class Tab3Page {
     this.router.navigate(["/student-detail"], { queryParams: { id }});
   }
 
-
 }

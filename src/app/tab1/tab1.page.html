@@ -1,32 +1,25 @@
 <ion-header [translucent]="true">
 
 </ion-header>
-
-
 <div class="ion-page" id="main-content">
-  <ion-header>
+  <ion-header collapse="condense" class="bg">
     <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Startseite</ion-title>
+
+      <ion-title size="large" class="txt"> Hauptmenü </ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding" class="bgm">
 
     <ion-refresher slot="fixed" (ionRefresh)="handleRefresh({event : $event})">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
 
     <p><b>Herzlich Willkommen in der offiziellen App der 4AHITN!</b></p>
-    Diese Applikation beinhaltet die neuesten Informationen bezüglich Klassenfahrten, Durchsagen etc.
-    <p>Unter anderem ist der Stundenplan sowie die Klassenliste genauso verfügbar.</p>
 
     <ion-grid>
       <ion-row>
 
-        <ion-col push-sm="6"><ion-button type="button" class="button" style="height: 125px; width: 125px;" expand="full"  href="https://www.htl-donaustadt.at/home" target="_blank">htl-donaustadt.at</ion-button></ion-col>
-        <ion-col pull-sm="6"><ion-button type="button" class="button" expand="full" style="height: 125px; width: 125px;" (click)="gotoUser()"> Stundenplan</ion-button></ion-col>
+
 
       </ion-row>
     </ion-grid>
@@ -34,12 +27,41 @@
     <ion-grid>
       <ion-row>
 
-        <ion-col push-sm="6"><ion-button expand="full" style="height: 125px; width: 125px;" (click)="gotoUserr()"> Klassenliste</ion-button></ion-col>
-        <ion-col pull-sm="6"><ion-button expand="full" style="height: 125px; width: 125px;" (click)="gotoUserr1()"> Zum Video</ion-button></ion-col>
+        <ion-col>
+        </ion-col>
+
+        <ion-col >
+          <ion-button type="button" class="button"  expand="full" color="medium"  href="https://www.htl-donaustadt.at/home" target="_blank">
+            <ion-icon aria-hidden="true" name="globe-outline"></ion-icon>
+          </ion-button>
+
+          <ion-button type="button" class="button" expand="full" color="medium" (click)="gotoUserr1()">
+            <ion-icon aria-hidden="true" name="play-circle-outline"> Video </ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button expand="full" color="medium"  (click)="gotoUserr()">
+          <ion-icon aria-hidden="true" name="list-outline"></ion-icon>
+          </ion-button>
+
+
+          <ion-button expand="full"  color="medium"  (click)="gotoUser()">
+          <ion-icon aria-hidden="true" name="people-outline" ></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+        </ion-col>
 
       </ion-row>
     </ion-grid>
 
+
+    <ion-grid>
+      <ion-row>
+      </ion-row>
+    </ion-grid>
 
 
 

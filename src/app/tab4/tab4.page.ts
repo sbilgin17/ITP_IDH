@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
 })
-export class Tab4Page implements OnInit {
+export class Tab4Page {
 
-  constructor() { }
+  constructor(private  router: Router) { }
 
-  ngOnInit() {
+
+
+  gotoApp(){
+    this.router.navigate(["/appentwickler"], { queryParams: {}});
   }
+  gotoWeb(){
+    this.router.navigate(["/websiteentwickler"], { queryParams: {}});
+  }
+  gotoDes(){
+    this.router.navigate(["/designerin"], { queryParams: {}});
+  }
+
+
 
 }

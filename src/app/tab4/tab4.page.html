@@ -1,10 +1,3 @@
-<ion-header [translucent]="true" class="bg">
-  <ion-toolbar>
-    <ion-title>
-      Über Uns
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 
 <ion-content [fullscreen]="true">
@@ -25,20 +18,16 @@
         <ion-col></ion-col>
         <ion-col>
 
-          <p><ion-button shape="round" class="button" color="dark">App-Entwickler</ion-button></p>
-          <p><ion-button shape="round" class="button" color="dark">Website-Entwickler</ion-button></p>
-          <p><ion-button shape="round" class="button" color="dark">Designerin</ion-button></p>
+          <p><ion-button shape="round" class="button" color="dark" (click)="gotoApp()">App-Entwickler</ion-button></p>
+          <p><ion-button shape="round" class="button" color="dark" (click)="gotoWeb()">Website-Entwickler</ion-button></p>
+          <p><ion-button shape="round" class="button" color="dark" (click)="gotoDes()">Designerin</ion-button></p>
 
 
         </ion-col>
         <ion-col></ion-col>
 
-
       </ion-row>
     </ion-grid>
-
-
-
   </ion-content>
 
 
