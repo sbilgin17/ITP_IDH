@@ -13,22 +13,39 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
+
+    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh({event : $event})">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
     <p><b>Herzlich Willkommen in der offiziellen App der 4AHITN!</b></p>
     Diese Applikation beinhaltet die neuesten Informationen bezüglich Klassenfahrten, Durchsagen etc.
     <p>Unter anderem ist der Stundenplan sowie die Klassenliste genauso verfügbar.</p>
 
-    <ion-button href="https://www.htl-donaustadt.at/home" target="_blank">htl-donaustadt.at</ion-button>
+    <ion-grid>
+      <ion-row>
 
-    <ion-button (click)="gotoUser()"> Stundenplann
+        <ion-col push-sm="6"><ion-button type="button" class="button" style="height: 125px; width: 125px;" expand="full"  href="https://www.htl-donaustadt.at/home" target="_blank">htl-donaustadt.at</ion-button></ion-col>
+        <ion-col pull-sm="6"><ion-button type="button" class="button" expand="full" style="height: 125px; width: 125px;" (click)="gotoUser()"> Stundenplan</ion-button></ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col push-sm="6"><ion-button expand="full" style="height: 125px; width: 125px;" (click)="gotoUserr()"> Klassenliste</ion-button></ion-col>
+        <ion-col pull-sm="6"><ion-button expand="full" style="height: 125px; width: 125px;" (click)="gotoUserr1()"> Zum Video</ion-button></ion-col>
+
+      </ion-row>
+    </ion-grid>
 
 
 
-    </ion-button>
-
-    <ion-button (click)="gotoUserr()"> Klassenliste
 
 
-    </ion-button>
+
+
   </ion-content>
 
 
