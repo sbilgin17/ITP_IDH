@@ -2,6 +2,16 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+
+@font-face {
+  font-family: 'waltograph';
+  src: url('../assets/waltograph42.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
