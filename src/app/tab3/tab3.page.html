@@ -1,12 +1,12 @@
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="content3">
   <ion-header collapse="condense" class="bg">
     <ion-toolbar>
 
       <ion-title size="large" class="txt"> SchülerInnen </ion-title>
     </ion-toolbar>
   </ion-header>
-<ion-content class="content3">
+
   <ion-list>
     <ion-item *ngFor="let student of students; let i = index">
 
@@ -15,7 +15,7 @@
 
                   <ion-item>
                     <ion-avatar slot="start">
-                      <img  src="{{student.imageUrl}}"/>
+                      <img  src="{{student.imageUrlPB}}"/>
                     </ion-avatar>
                     <ion-label>
                       <p>            mmm</p>

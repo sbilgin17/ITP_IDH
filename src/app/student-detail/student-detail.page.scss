@@ -1,13 +1,46 @@
 .bg{
   --ion-background-color: #bebdbd;
-
+  background-color: #bebdbd;
+  font-family: waltograph;
+  font-size: 22px;
+  padding-top: 65px;
 
 }
-.bgs{
-
+.bgm{
   background-color: #bebdbd;
-
+  --ion-background-color: #bebdbd;
 }
 .card{
   --ion-background-color: #8a8989;
 }
+ion-toolbar .toolbar-background{
+ --ion-backgroundcolor: #bebdbd;
+}
+
+.header-ios{
+  background-color: #bebdbd ;
+  --ion-background-color: #bebdbd;
+}
+.merk{
+  font-size: 13px;
+ }
+.name{
+  font-size: 35px;
+}
+
+.fd{
+  font-size: 23px;
+  font-color: black;
+}
+
+.txt {
+  font-size: 35px;
+}
+.content{
+  background-color: #bebdbd ;
+  --ion-background-color: #bebdbd;
+  padding-bottom: 65px;
+}
+
+
+

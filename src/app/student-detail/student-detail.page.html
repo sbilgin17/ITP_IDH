@@ -1,36 +1,62 @@
-<ion-header class="bg">
-  <ion-toolbar class="bg">
-    <ion-title class="bgs">KN {{student.id}}</ion-title>
-
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" class="bg">
+  <ion-header collapse="condense" class="bg">
+    <ion-toolbar>
+
+      <ion-title size="large" class="txt"> App-Entwickler </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
 
 
   <ion-card class="card">
-    <img alt="Silhouette of mountains" src="{{student.imageUrl}}" />
+    <img alt="Silhouette of mountains" src="{{student.imageUrlPB}}" />
     <ion-card-header>
-      <ion-card-title >{{student.vname}} {{student.surname}}</ion-card-title>
-      <ion-card-subtitle >{{student.merk}}</ion-card-subtitle>
+      <ion-card-title class="name">{{student.vname}} {{student.surname}}</ion-card-title>
+      <ion-card-subtitle class="merk">{{student.merk}}</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-card-content >
+    <ion-card-content>
 
-      <p>Geburtsdatum: </p>
-      <p>Sternzeichen: </p>
-      <p>Lieblingsfilm: </p>
-      <p>Lieblingsserie: </p>
-      <p>Lieblingsfach: </p>
 
+      <p><ion-label style="color: black" class="fd">Geburtsdatum: </ion-label>
+      <ion-label class="fd">{{student.geburtsdatum}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Sternzeichen: </ion-label>
+      <ion-label class="fd">{{student.sternzeichen}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Staatsangehörigkeit: </ion-label>
+      <ion-label class="fd">{{student.staatsang}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Herkunft: </ion-label>
+      <ion-label class="fd">{{student.herkunft}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Familienzustand: </ion-label>
+      <ion-label class="fd">{{student.familienzustand}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Lieblingsfach: </ion-label>
+      <ion-label class="fd">{{student.liebfach}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Lieblingsfarbe: </ion-label>
+      <ion-label class="fd">{{student.liebfarbe}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Lieblingsfilm/serie: </ion-label>
+      <ion-label class="fd">{{student.liebfilm}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Hobby: </ion-label>
+        <ion-label class="fd">{{student.hobby}} </ion-label></p>
+
+      <p><ion-label style="color: black" class="fd">Info: </ion-label>
+        <ion-label class="fd">{{student.infos}} </ion-label></p>
 
 
 
     </ion-card-content>
   </ion-card>
-
-
-
-
-
 </ion-content>
+
+
+
+
+
